@@ -1,0 +1,34 @@
+
+class PacMan:
+    def __init__(self):		#atributos
+        self.estado = False
+        self.posicion_x = 1
+        self.posicion_y = 1
+        self.velocidad = 10
+
+    def get_color(self):	#métodos
+        ...
+
+##  si se necesita pasar un parámetro:
+
+    def método2(self, color):
+	...
+
+#############################
+##  como utilizar
+#############################
+
+##  crear objeto a partir de una clase
+jugador = PacMan()
+
+accesar un atributo
+posx = jugador.posicion_x
+posy = jugador.posicion_y
+
+
+llamar un método
+fantasma_celeste.get_color()
+
+##  no se deberia utilizar:  algo.posicion_x 
+##  sino crear un método y llamar: algo.getposicion_x()
+

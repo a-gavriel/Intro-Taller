@@ -1,0 +1,82 @@
+
+########################################################################
+class Juego:
+    def __init__(self):      #atributos
+        global scores
+        self.numero_de_juego = 0
+        self.matriz =  lectura_matriz()
+        self.capsulas =  0
+        self.comida =  0
+        self.scores = scores
+
+    def get_capsulas(self):  #métodos
+        ...
+    def get_comida(self):
+        ...
+    def comida(self):
+        ...
+    def capsulas(self):
+        ...
+
+########################################################################
+
+class PacMan:
+    def __init__(self):
+        self.estado = False
+        self.posicion_x = 1
+        self.posicion_y = 1
+        self.velocidad = 10
+
+    def get_color(self):
+        ...
+    def get_velocidad(self):
+        ...
+    def get_estado(self):
+        ...
+    def cambio(self):
+        ...
+    def mov_izq(self):
+        ...
+    def mov_der(self):
+        ...
+    def mov_arriba(self):
+        ...
+    def mov_abajo(self):
+        ...
+
+########################################################################
+
+class Fantasma:
+    global matriz
+    def __init__(self, color):
+        self.estado = 0
+        self.posicion_x = 14
+        self.posicion_y = 12
+        self.velocidad = 10
+        if color == "celeste":
+            self.color = (0,200,200)
+        elif color == "rojo":
+            self.color = (255,0,0)
+            self.velocidad = 15
+        elif color == "rosado":
+            self.color = (255,100,150)
+        elif color == "naranja":
+            self.color = (255,100,0)
+        else:
+            self.color = (200,0,200)
+    def get_color(self):
+        ...
+    def get_velocidad(self):
+        ...
+    def mov(self):
+        ...
+    def mov_izq(self):
+        ...
+    def mov_der(self):
+        ...
+    def mov_arriba(self):
+       	...
+    def mov_abajo(self):
+        ...
+
+########################################################################
