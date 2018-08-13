@@ -1,0 +1,8 @@
+
+10
+primero
+10
+segundo
+5
+
+0
